@@ -5,6 +5,9 @@ function obtenerResto(x, y) {
   // 10, 5 ---> 0
   // 16, 5 ---> 1
   // Tu código:
+  if (typeof x === 'number' && typeof y === 'number' && y !== 0) {
+    return x % y;
+  }
 }
 
 module.exports = obtenerResto;
